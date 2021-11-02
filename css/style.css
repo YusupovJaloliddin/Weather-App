@@ -1,0 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: url("../img/img1.jpg") no-repeat center top; 
+  background-size:cover;
+  height:100vh; 
+}
