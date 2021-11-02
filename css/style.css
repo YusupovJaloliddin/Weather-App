@@ -35,14 +35,15 @@ header input{
   font-size: 20px;
   font-weight: 300;
   transition: 0.2s ease-out;
+  background-image: linear-gradient(to right, white , lightblue);
+
 }
 header input:focus{
   background-color: rgba(255,255,255,0.8);
   border-bottom:3px solid green;
   border-left:3px solid green;
-
+  background-image: linear-gradient(to right, lightblue, white );
   border-radius: 0px 16px 0px 36px;
-
 }
 main{
   background-color: rgba(0, 0,0,0.5);
@@ -91,7 +92,9 @@ text-shadow: 0px 3px rgba(0,0,0,0.9);
   /* background-color: aqua; */
   /* margin-top: 20vh; */
 }
-
+.mylink{
+  margin-top: 50px;
+}
 .mylink li{
   position: relative;
   list-style-type: none;
@@ -120,14 +123,27 @@ text-shadow: 0px 3px rgba(0,0,0,0.9);
   border-radius:10px;
   width: 30px;
   height:30px;
-position: absolute;
-bottom:5px;
+  position: absolute;
+  bottom:5px;
   left: 10px;
   margin-right: 5px;
 }
 
-
-
+@media(max-width:900px)
+{
+  .app-wrap{
+    /* background-color: blue; */
+    grid-template-columns:100%;
+  }
+  
+  .main{
+    background-color: blue;
+    margin-top: 50px;
+  }
+  .mylink{
+    display: none;
+  }
+}
 
 
 
